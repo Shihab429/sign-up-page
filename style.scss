@@ -1,0 +1,92 @@
+$color_red: hsl(0, 100%, 74%);
+$color_blue: hsl(248, 32%, 49%);
+$color_green: hsl(154, 59%, 51%);
+$input_border_color: hsl(246, 25%, 77%);
+$try_free_shadow: hsl(249, 10%, 26%);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main{
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: $color_red;
+    #sub_main{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1000px;
+        margin: 0 auto;
+        #text,
+        #form_div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+            
+        }
+        #text{
+            color: white;
+            h1{
+                text-align: left;
+                font-size: 45px;
+                font-weight: bold;
+            }
+            p{
+                font-size: 18px;
+                line-height: 23px;
+                margin-top: 18px;
+            }
+        }
+        #form_div{
+            #try_free{
+                width: 380px;
+                padding: 15px 1px;
+                background-color: $color_blue;
+                color: white;
+                border: none;
+                border-radius: 6px;
+                box-shadow: 0 0 5px $try_free_shadow;
+                cursor: pointer;
+            }
+            form{
+                width: 380px;
+                padding: 25px;
+                background-color: white;
+                margin-top: 20px;
+                border-radius: 8px;
+            }
+            input{
+                height: 35px;
+                width: 300px;
+                margin-bottom: 25px;
+                padding: 10px;
+                border-radius: 6px;
+                border: 2px solid $input_border_color;
+                display: block;
+            }
+            #submit_btn{
+                background-color: $color_green;
+                color: white;
+                font-size: 13px;
+                font-weight: bold;
+                padding: 12px;
+                height: auto;
+                cursor: pointer;
+                border: none;
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 700px){
+    #sub_main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+}

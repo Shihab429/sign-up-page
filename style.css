@@ -9,6 +9,13 @@
   background-image: url(images/bg-intro-desktop.png);
   background-color: hsl(0, 100%, 74%);
 }
+#main .footer {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding-bottom: 5px;
+}
 #main #sub_main {
   height: 100vh;
   display: grid;
@@ -30,6 +37,7 @@
   text-align: left;
   font-size: 45px;
   font-weight: bold;
+  line-height: 45px;
 }
 #main #sub_main #text p {
   font-size: 18px;

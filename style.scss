@@ -14,6 +14,13 @@ $try_free_shadow: hsl(249, 10%, 26%);
 #main{
     background-image: url(images/bg-intro-desktop.png);
     background-color: $color_red;
+    .footer{
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        padding-bottom: 5px;
+    }
     #sub_main{
         height: 100vh;
         display: grid;
@@ -34,6 +41,7 @@ $try_free_shadow: hsl(249, 10%, 26%);
                 text-align: left;
                 font-size: 45px;
                 font-weight: bold;
+                line-height: 45px;
             }
             p{
                 font-size: 18px;

@@ -146,6 +146,9 @@ $try_free_shadow: hsl(249, 10%, 26%);
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                .label{
+                    margin-left: 230px;
+                }
                     #try_free{
                         width: 320px;
                     }

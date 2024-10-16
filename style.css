@@ -134,6 +134,9 @@
     justify-content: center;
     align-items: center;
   }
+  #main #sub_main #form_div .label {
+    margin-left: 230px;
+  }
   #main #sub_main #form_div #try_free {
     width: 320px;
   }

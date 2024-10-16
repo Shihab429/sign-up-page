@@ -60,6 +60,7 @@ $try_free_shadow: hsl(249, 10%, 26%);
                 border-radius: 8px;
             }
             input{
+                margin: 0 auto;
                 height: 35px;
                 width: 300px;
                 margin-bottom: 25px;
@@ -67,6 +68,7 @@ $try_free_shadow: hsl(249, 10%, 26%);
                 border-radius: 6px;
                 border: 2px solid $input_border_color;
                 display: block;
+                
             }
             #submit_btn{
                 background-color: $color_green;
@@ -83,10 +85,48 @@ $try_free_shadow: hsl(249, 10%, 26%);
     
 }
 
-@media (max-width: 700px){
-    #sub_main{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
+@media (max-width: 850px){
+    #main{
+
+        #sub_main{
+            height: auto;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            #form_div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+
+    }
+    @media (max-width: 420px){
+        #main{
+            width: 100%;
+            background-image: url(images/bg-intro-mobile.png);
+            #sub_main{
+                width: 97%;
+                #form_div{
+                    display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                    #try_free{
+                        width: 320px;
+                    }
+                    form{
+                        width: 320px;
+                        input{
+                            width: 250px;
+                        }
+                        
+                    }
+                }
+            }
+        }
     }
 }
